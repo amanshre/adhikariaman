@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aman Adhikari – Electrical and Electronics Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6F8; --surface:#FFFFFF; --ink:#16232E; --muted:#51616E; --line:#CBD5DC;
+  --steel:#1F4E79; --signal:#F2B705; --signal-ink:#16232E;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#10181F; --surface:#17222B; --ink:#E8EEF2; --muted:#9DAEBB; --line:#2A3945;
+    --steel:#7DB4E6; --signal:#F2B705; --signal-ink:#16232E; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10181F; --surface:#17222B; --ink:#E8EEF2; --muted:#9DAEBB; --line:#2A3945;
+  --steel:#7DB4E6; --signal:#F2B705; --signal-ink:#16232E; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+a{color:var(--steel)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;gap:16px;flex-wrap:wrap}
+.brand{font:700 18px "Familjen Grotesk",sans-serif;text-decoration:none;color:var(--ink)}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:6px;text-decoration-thickness:3px}
+
+.hero{padding:72px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(42px,7vw,76px);font-weight:700;letter-spacing:-.02em}
+.role{font:500 clamp(20px,2.6vw,26px) "Familjen Grotesk",sans-serif;color:var(--steel);margin:14px 0 20px}
+.lede{max-width:46ch;color:var(--muted);margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--signal);border-color:var(--signal);color:var(--signal-ink)}
+.btn:hover{transform:translateY(-1px)}
+.scope{border:1px solid var(--line);border-radius:8px;background:var(--surface);overflow:hidden}
+.scope svg{display:block;width:100%;height:auto}
+.scope figcaption{padding:10px 14px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.scope{margin:0}
+.wave{animation:slide 9s linear infinite}
+@keyframes slide{to{transform:translateX(-200px)}}
+@media (prefers-reduced-motion:reduce){.wave{animation:none}}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4vw,38px);margin-bottom:28px}
+.grid2{display:grid;grid-template-columns:200px 1fr;gap:12px 40px}
+.grid2 .when{color:var(--muted);font-size:15px}
+.grid2 h3{font-size:21px;margin-bottom:6px}
+.grid2 p{margin:0 0 6px;max-width:62ch}
+ul.clean{margin:8px 0 0;padding-left:20px;max-width:62ch}
+ul.clean li{margin-bottom:6px}
+.entry+.entry{margin-top:28px}
+
+.project{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--signal);border-radius:8px;padding:28px}
+.project h3{font-size:26px;margin-bottom:10px}
+.project>p{max-width:62ch;margin:0 0 20px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin:0 0 22px;padding:0;list-style:none}
+.flow li{flex:1 1 150px;border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:15px;background:var(--bg)}
+.flow b{display:block;font-family:"Familjen Grotesk",sans-serif;font-size:16px;color:var(--steel);margin-bottom:2px}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+.cols h3{font-size:20px;margin-bottom:12px}
+.cols ul{margin:0;padding:0;list-style:none}
+.cols li{padding:7px 0;border-bottom:1px solid var(--line)}
+
+.contact p{max-width:52ch;color:var(--muted)}
+.contact dl{display:grid;grid-template-columns:110px 1fr;gap:10px 16px;margin:24px 0 0}
+.contact dt{color:var(--muted)}
+.contact dd{margin:0;font-weight:500}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+
+@media (max-width:760px){
+  .hero{padding-top:44px}
+  .hero .wrap{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr}
+  .contact dl{grid-template-columns:1fr;gap:2px}
+  .contact dd{margin-bottom:12px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Aman Adhikari</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#project">Project</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Aman Adhikari</h1>
+        <p class="role">Electrical and Electronics Engineer</p>
+        <p class="lede">I design and test electrical systems, with a focus on power system analysis, transformer protection and IoT monitoring. Based in Lalitpur, Nepal.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:adhikariaman601@gmail.com">Email me</a>
+          <a class="btn" href="#project">See my project</a>
+        </div>
+      </div>
+      <figure class="scope">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Three-phase sine waves, each shifted by 120 degrees">
+          <defs><clipPath id="c"><rect x="0" y="0" width="400" height="220"/></clipPath></defs>
+          <g stroke="currentColor" stroke-opacity=".12" stroke-width="1" style="color:var(--ink)">
+            <path d="M0 110H400M0 55H400M0 165H400M50 0V220M100 0V220M150 0V220M200 0V220M250 0V220M300 0V220M350 0V220"/>
+          </g>
+          <g clip-path="url(#c)" fill="none" stroke-width="3" stroke-linecap="round">
+            <g class="wave"><path id="pa" stroke="#F2B705"/><path id="pb" stroke="#7DB4E6"/><path id="pc" stroke="#E5646A"/></g>
+          </g>
+        </svg>
+        <figcaption>Three phases, 120° apart – the system I work with.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <h2>About</h2>
+    <p style="max-width:62ch;margin:0">I’m an electrical and electronics engineering graduate from Nepal Engineering College, Pokhara University. I want to apply my technical knowledge, problem-solving and hands-on engineering skills in a professional setting. I have worked on electrical installation and testing, and built an IoT-based protection system for transformers.</p>
+  </div></section>
+
+  <section id="project"><div class="wrap">
+    <h2>Featured project</h2>
+    <article class="project">
+      <h3>Smart Transformer Protection System</h3>
+      <p>An academic project that watches a transformer in real time and protects it automatically, so operators can supervise it remotely and avoid downtime.</p>
+      <ol class="flow" aria-label="How the system works">
+        <li><b>Measure</b>Voltage, current and temperature</li>
+        <li><b>Detect</b>Automatic fault detection</li>
+        <li><b>Protect</b>Protection mechanism responds</li>
+        <li><b>Report</b>Cloud data and alert notifications</li>
+      </ol>
+      <ul class="clean">
+        <li>Designed an IoT-based system to monitor transformer parameters and improve operational safety.</li>
+        <li>Implemented real-time monitoring with automatic fault detection and protection.</li>
+        <li>Integrated cloud-based monitoring and alerts for remote supervision and less downtime.</li>
+      </ul>
+    </article>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <h2>Experience</h2>
+    <div class="grid2">
+      <div class="when">Sept 2025 – Oct 2025</div>
+      <div>
+        <h3>Internship</h3>
+        <ul class="clean">
+          <li>Assisted in electrical installation and testing.</li>
+          <li>Learned how transformers and protection systems operate.</li>
+        </ul>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <h2>Education</h2>
+    <div class="entry grid2">
+      <div class="when">April 2022 – June 2026</div>
+      <div>
+        <h3>Bachelor of Electrical and Electronics Engineering</h3>
+        <p>Nepal Engineering College, Pokhara University</p>
+      </div>
+    </div>
+    <div class="entry grid2">
+      <div class="when">April 2019 – July 2021</div>
+      <div>
+        <h3>Higher Secondary Education (+2 Science)</h3>
+        <p>Dhanusha Science Campus · CGPA 2.8</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <h2>Skills and certifications</h2>
+    <div class="cols">
+      <div>
+        <h3>Software</h3>
+        <ul><li>AutoCAD</li><li>ETAP</li><li>MATLAB</li><li>MS Office (Excel, Word, PowerPoint)</li></ul>
+      </div>
+      <div>
+        <h3>Engineering</h3>
+        <ul><li>Electrical wiring design</li><li>Power system analysis</li><li>PLC basics</li><li>Problem solving</li></ul>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <ul><li>AutoCAD Electrical</li><li>Industrial Safety Training</li><li>PLC Programming Basics</li></ul>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="contact" class="contact"><div class="wrap">
+    <h2>Contact</h2>
+    <p>I’m open to engineering roles where I can learn and contribute. Email is the quickest way to reach me.</p>
+    <dl>
+      <dt>Email</dt><dd><a href="mailto:adhikariaman601@gmail.com">adhikariaman601@gmail.com</a></dd>
+      <dt>Phone</dt><dd><a href="tel:+9779812086558">9812086558</a></dd>
+      <dt>Location</dt><dd>Gowarko, Lalitpur, Nepal</dd>
+    </dl>
+  </div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Aman Adhikari</div></footer>
+
+<script>
+(function(){
+  var W=600,H=220,mid=110,amp=70,period=200;
+  function d(shift){
+    var p="";
+    for(var x=0;x<=W;x+=4){
+      var y=mid-amp*Math.sin((x/period)*2*Math.PI-shift);
+      p+=(x?"L":"M")+x+" "+y.toFixed(1);
+    }
+    return p;
+  }
+  document.getElementById("pa").setAttribute("d",d(0));
+  document.getElementById("pb").setAttribute("d",d(2*Math.PI/3));
+  document.getElementById("pc").setAttribute("d",d(4*Math.PI/3));
+})();
+</script>
+</body>
+</html>
